@@ -5,7 +5,7 @@ pipeline {
         choice(name: 'PLATFORM', choices: ['linux', 'windows', 'macOS'], description: 'Select the build platform')
         booleanParam(name: 'DEBUG', defaultValue: false, description: 'Enable debug mode')
         string(name: 'VERSION', defaultValue: '1.0.0', description: 'Specify the version')
-    }
+    } 
 
     stages {
         stage('Checkout') {
